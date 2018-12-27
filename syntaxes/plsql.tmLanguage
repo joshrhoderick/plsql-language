@@ -248,6 +248,12 @@
         </dict>
         <dict>
             <key>match</key>
+            <string>(?i)\b((c|gc|k)_[-a-z0-9_]+)\b</string>
+            <key>name</key>
+            <string>constant.other.oracle</string>
+        </dict>
+        <dict>
+            <key>match</key>
             <string>(?i):\b(new|old)\b</string>
             <key>name</key>
             <string>variable.trigger.oracle</string>
