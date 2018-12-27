@@ -164,7 +164,7 @@
         </dict>
         <dict>
             <key>match</key>
-            <string>(?i)\b(%(isopen|found|notfound|rowcount)|commit|rollback|sqlerrm)\b</string>
+            <string>(?i)\b(%(isopen|found|notfound|rowcount)|commit|rollback|sqlerrm|savepoint)\b</string>
             <key>name</key>
             <string>support.function.oracle</string>
         </dict>
