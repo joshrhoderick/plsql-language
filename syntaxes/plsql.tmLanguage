@@ -272,7 +272,7 @@
         </dict>
         <dict>
             <key>match</key>
-            <string>(?i)\b(grant|revoke|alter|drop|force|add|check|constraint|primary\s+key|foreign\s+key|references|unique(\s+index)?|column|sequence|increment\s+by|cache|(materialized\s+)?view|trigger|storage|tablespace|pct(free|used)|(init|max)trans|logging|((global|private)\s+temporary)|on\s+commit\s+(preserve|delete)\s+rows)\b</string>
+            <string>(?i)\b(grant|revoke|alter|drop|force|add|check|constraint|primary\s+key|foreign\s+key|references|unique(\s+index)?|column|sequence|increment\s+by|cache|(materialized\s+)?view|trigger|storage|tablespace|pct(free|used)|(init|max)trans|logging|((global|private)\s+temporary)|on\s+commit\s+(preserve|delete)\s+rows|authid\s+(current_user|definer))\b</string>
             <key>name</key>
             <string>keyword.other.ddl.oracle</string>
         </dict>
