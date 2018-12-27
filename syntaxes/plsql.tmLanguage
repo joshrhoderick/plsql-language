@@ -290,7 +290,7 @@
         </dict>
         <dict>
             <key>match</key>
-            <string>(?i)\b(define|whenever\s+sqlerror|exec|timing\s+start|timing\s+stop|show\s+errors)\b</string>
+            <string>(?i)\b(define|whenever\s+sqlerror|exec|timing\s+start|timing\s+stop|show\s+errors|off)\b</string>
             <key>name</key>
             <string>keyword.other.sqlplus.oracle</string>
         </dict>
