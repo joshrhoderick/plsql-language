@@ -206,7 +206,7 @@
         </dict>
         <dict>
             <key>match</key>
-            <string>(?i)\b(abs|acos|asin|atan|atan2|bit_(and|or|xor)|ceil|cos|cosh|exp|extract|floor|greatest|least|ln|log|mod|power|remainder|round|sign|sin|sinh|sqrt|tan|tanh|trunc)\b</string>
+            <string>(?i)\b(abs|acos|asin|atan|atan2|bit_(and|or|xor)|ceil|cos|cosh|exp|extract|floor|greatest|least|ln|(?<!\.)log|mod|power|remainder|round|sign|sin|sinh|sqrt|tan|tanh|trunc)\b</string>
             <key>name</key>
             <string>support.function.builtin.math.oracle</string>
         </dict>
