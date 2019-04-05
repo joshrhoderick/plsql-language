@@ -17,6 +17,30 @@
         <!--begin customization-->
         <dict>
             <key>match</key>
+            <string>(?i)\b(self)\b</string>
+            <key>name</key>
+            <string>constant.language.oracle</string>
+        </dict>
+        <dict>
+            <key>match</key>
+            <string>(?i)\b(forall)\b</string>
+            <key>name</key>
+            <string>keyword.control.oracle</string>
+        </dict>
+        <dict>
+            <key>match</key>
+            <string>(?i)\b(%(savepoint))\b</string>
+            <key>name</key>
+            <string>support.function.oracle</string>
+        </dict>
+        <dict>
+            <key>match</key>
+            <string>(?i)\b((?<!\.)log)\b</string>
+            <key>name</key>
+            <string>support.function.builtin.math.oracle</string>
+        </dict>
+        <dict>
+            <key>match</key>
             <string>(?i)\b(p(i|o|io)?_[-a-z0-9_]+)\b</string>
             <key>name</key>
             <string>variable.parameter.oracle</string>
@@ -29,31 +53,33 @@
         </dict>
         <dict>
             <key>match</key>
-            <string>(?i)\b(forall)\b</string>
+            <string>(?i)\b((c|gc|k)_[-a-z0-9_]+)\b</string>
             <key>name</key>
-            <string>keyword.control.oracle</string>
+            <string>constant.other.oracle</string>
         </dict>
+        <!--
         <dict>
             <key>match</key>
-            <string>(?i)\b(comment|\.(nextval|currval))\b</string>
+            <string>(?i)\b()\b</string>
             <key>name</key>
             <string>keyword.other.oracle</string>
         </dict>
+        -->
         <dict>
             <key>match</key>
-            <string>(?i)\b(alter(\s+session)?|logging|((global|private)\s+temporary)|on\s+commit\s+(preserve|delete)\s+rows|(authid|bequeath)\s+(current_user|definer)|virtual|invisible|generated\s+(always|by\s+default|on\s+null)\s+as\s+identity|(constructor\s+|static\s+|(map\s+)?member\s+)?(function\s+|procedure\s+)|result)\b</string>
+            <string>(?i)\b(alter(\s+session)?|logging|((global|private)\s+temporary)|on\s+commit\s+(preserve|delete)\s+rows|(authid|bequeath)\s+(current_user|definer)|virtual|invisible|generated\s+(always|by\s+default|on\s+null)\s+as\s+identity|(constructor\s+|static\s+|(map\s+)?member\s+)?(function\s+|procedure\s+)|result|object|body)\b</string>
             <key>name</key>
             <string>keyword.other.ddl.oracle</string>
         </dict>
-           <dict>
+        <dict>
             <key>match</key>
-            <string>(?i)\b(log\s+errors\s+(into|reject\s+limit)?|truncate)\b</string>
+            <string>(?i)\b(to|(public\s+)?synonym|(no)?logging|build\s+(immediate|deferred)|index|dual|within(\s+group)?|errors\s+(into|reject\s+limit)?|truncate)\b</string>
             <key>name</key>
             <string>keyword.other.sql.oracle</string>
         </dict>
         <dict>
             <key>match</key>
-            <string>(?i)\b(define|whenever\s+sqlerror|exec|timing\s+start|timing\s+stop|show\s+errors|off)\b</string>
+            <string>(?i)\b(show\s+errors|off)\b</string>
             <key>name</key>
             <string>keyword.other.sqlplus.oracle</string>
         </dict>
@@ -67,7 +93,7 @@
                 </dict>
             </dict>
             <key>match</key>
-            <string>(?i)\b((\w+_pkg|pkg_\w+)\.(\w+)|types)\b</string>
+            <string>(?i)\b(types)\b</string>
             <key>name</key>
             <string>support.function.user-defined.oracle</string>
         </dict>
