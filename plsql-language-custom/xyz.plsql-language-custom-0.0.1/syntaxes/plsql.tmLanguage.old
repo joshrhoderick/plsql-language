@@ -139,7 +139,7 @@
         </dict>
         <dict>
             <key>match</key>
-            <string>(?i)\b(true|false|null|is\s+(not\s+)?null)\b</string>
+            <string>(?i)\b(true|false|null|is\s+(not\s+)?null|self)\b</string>
             <key>name</key>
             <string>constant.language.oracle</string>
         </dict>
@@ -151,7 +151,7 @@
         </dict>
         <dict>
             <key>match</key>
-            <string>(?i)\b(if|elsif|else|end\s+if|loop|end\s+loop|for|while|case|end\s+case|continue|return|goto)\b</string>
+            <string>(?i)\b(if|elsif|else|end\s+if|loop|end\s+loop|for|while|case|end\s+case|continue|return|goto|forall)\b</string>
             <key>name</key>
             <string>keyword.control.oracle</string>
         </dict>
@@ -164,7 +164,7 @@
         </dict>
         <dict>
             <key>match</key>
-            <string>(?i)\b(%(isopen|found|notfound|rowcount)|commit|rollback|sqlerrm)\b</string>
+            <string>(?i)\b(%(isopen|found|notfound|rowcount)|commit|rollback|sqlerrm|savepoint)\b</string>
             <key>name</key>
             <string>support.function.oracle</string>
         </dict>
@@ -206,7 +206,7 @@
         </dict>
         <dict>
             <key>match</key>
-            <string>(?i)\b(abs|acos|asin|atan|atan2|bit_(and|or|xor)|ceil|cos|cosh|exp|extract|floor|greatest|least|ln|log|mod|power|remainder|round|sign|sin|sinh|sqrt|tan|tanh|trunc)\b</string>
+            <string>(?i)\b(abs|acos|asin|atan|atan2|bit_(and|or|xor)|ceil|cos|cosh|exp|extract|floor|greatest|least|ln|(?<!\.)log|mod|power|remainder|round|sign|sin|sinh|sqrt|tan|tanh|trunc)\b</string>
             <key>name</key>
             <string>support.function.builtin.math.oracle</string>
         </dict>
@@ -236,15 +236,21 @@
         </dict>
         <dict>
             <key>match</key>
-            <string>(?i)\b(p(i|o|io)_[-a-z0-9_]+)\b</string>
+            <string>(?i)\b(p(i|o|io)?_[-a-z0-9_]+)\b</string>
             <key>name</key>
             <string>variable.parameter.oracle</string>
         </dict>
         <dict>
             <key>match</key>
-            <string>(?i)\b(l_[-a-z0-9_]+)\b</string>
+            <string>(?i)\b([lv]_[-a-z0-9_]+)\b</string>
             <key>name</key>
             <string>variable.other.oracle</string>
+        </dict>
+        <dict>
+            <key>match</key>
+            <string>(?i)\b((c|gc|k)_[-a-z0-9_]+)\b</string>
+            <key>name</key>
+            <string>constant.other.oracle</string>
         </dict>
         <dict>
             <key>match</key>
@@ -272,19 +278,19 @@
         </dict>
         <dict>
             <key>match</key>
-            <string>(?i)\b(grant|revoke|alter|drop|force|add|check|constraint|primary\s+key|foreign\s+key|references|unique(\s+index)?|column|sequence|increment\s+by|cache|(materialized\s+)?view|trigger|storage|tablespace|pct(free|used)|(init|max)trans|logging)\b</string>
+            <string>(?i)\b(grant|revoke|alter|drop|force|add|check|constraint|primary\s+key|foreign\s+key|references|unique(\s+index)?|column|sequence|increment\s+by|cache|(materialized\s+)?view|trigger|storage|tablespace|pct(free|used)|(init|max)trans|logging|((global|private)\s+temporary)|on\s+commit\s+(preserve|delete)\s+rows|(authid|bequeath)\s+(current_user|definer)|virtual|invisible|generated\s+(always|by\s+default|on\s+null)\s+as\s+identity|(constructor\s+|static\s+|(map\s+)?member\s+)?(function\s+|procedure\s+)|result)\b</string>
             <key>name</key>
             <string>keyword.other.ddl.oracle</string>
         </dict>
            <dict>
             <key>match</key>
-            <string>(?i)\b(with|select|from|where|order\s+(siblings\s+)?by|group\s+by|rollup|cube|((left|right|cross|natural)\s+(outer\s+)?)?join|on|asc|desc|update|set|insert|into|values|delete|distinct|union|minus|intersect|having|limit|table|between|like|of|row|(range|rows)\s+between|nulls\s+first|nulls\s+last|before|after|all|any|exists|rownum|cursor|returning|over|partition\s+by|merge|using|matched|pivot|unpivot)\b</string>
+            <string>(?i)\b(with|select|from|to|where|order\s+(siblings\s+)?by|group\s+by|rollup|cube|((left|right|cross|natural)\s+(outer\s+)?)?join|on|asc|desc|update|set|insert|into|values|delete|distinct|union|minus|intersect|having|limit|table|between|like|of|row|(range|rows)\s+between|nulls\s+first|nulls\s+last|before|after|all|any|exists|rownum|cursor|returning|over|partition\s+by|merge|using|matched|pivot|unpivot|(public\s+)?synonym|(no)?logging|build\s+(immediate|deferred)|index|dual|within\s+group)\b</string>
             <key>name</key>
             <string>keyword.other.sql.oracle</string>
         </dict>
         <dict>
             <key>match</key>
-            <string>(?i)\b(define|whenever\s+sqlerror|exec|timing\s+start|timing\s+stop)\b</string>
+            <string>(?i)\b(define|whenever\s+sqlerror|exec|timing\s+start|timing\s+stop|show\s+errors|off)\b</string>
             <key>name</key>
             <string>keyword.other.sqlplus.oracle</string>
         </dict>
