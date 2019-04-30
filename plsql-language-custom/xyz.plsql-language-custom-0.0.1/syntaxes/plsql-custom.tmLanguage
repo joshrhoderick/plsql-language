@@ -73,7 +73,7 @@
         </dict>
         <dict>
             <key>match</key>
-            <string>(?i)\b(to|(public\s+)?synonym|(no)?logging|build\s+(immediate|deferred)|index|dual|within(\s+group)?|errors\s+(into|reject\s+limit)?|truncate)\b</string>
+            <string>(?i)\b(to|(public\s+)?synonym|(no)?logging|build\s+(immediate|deferred)|index|dual|within(\s+group)?|errors\s+(into|reject\s+limit)?|truncate|multiset(\s+except|intersect|union)?)\b</string>
             <key>name</key>
             <string>keyword.other.sql.oracle</string>
         </dict>
