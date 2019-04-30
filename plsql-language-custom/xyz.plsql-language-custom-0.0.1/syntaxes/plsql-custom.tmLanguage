@@ -41,7 +41,7 @@
         </dict>
         <dict>
             <key>match</key>
-            <string>(?i)\b(p(i|o|io)?_[-a-z0-9_]+)\b</string>
+            <string>(?i)\b(p(o|io)?_[-a-z0-9_]+)\b</string>
             <key>name</key>
             <string>variable.parameter.oracle</string>
         </dict>
@@ -83,20 +83,21 @@
             <key>name</key>
             <string>keyword.other.sqlplus.oracle</string>
         </dict>
+        <!--
+        support.class.user-defined.oracle
+        support.constant.user-defined.oracle
+        support.function.user-defined.oracle
+        support.variable.user-defined.oracle
+        support.type.user-defined.oracle
+        -->
         <dict>
-            <key>captures</key>
-            <dict>
-                <key>3</key>
-                <dict>
-                    <key>name</key>
-                    <string>support.class.user-defined.oracle</string>
-                </dict>
-            </dict>
+            <!-- Eliminate highlighting of strings beginning wtih "pi_" -->
             <key>match</key>
-            <string>(?i)\b(types)\b</string>
+            <string>(?i)\b(pi_\w+)\b</string>
             <key>name</key>
-            <string>support.function.user-defined.oracle</string>
+            <string>support.variable.user-defined.oracle</string>
         </dict>
+
         <!--end customization-->
         <dict>
             <key>include</key>
