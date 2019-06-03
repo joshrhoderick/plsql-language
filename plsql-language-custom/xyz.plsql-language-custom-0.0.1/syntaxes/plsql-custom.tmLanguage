@@ -91,6 +91,13 @@
         support.type.user-defined.oracle
         -->
         <dict>
+            <!-- Database links -->
+            <key>match</key>
+            <string>(?i)(@\w+)\b</string>
+            <key>name</key>
+            <string>support.constant.user-defined.oracle</string>
+        </dict>
+        <dict>
             <!-- Eliminate highlighting of strings beginning wtih "pi_" -->
             <key>match</key>
             <string>(?i)\b(pi_\w+)\b</string>
