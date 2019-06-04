@@ -98,9 +98,9 @@
             <string>support.constant.user-defined.oracle</string>
         </dict>
         <dict>
-            <!-- Eliminate highlighting of strings beginning wtih "pi_" -->
+            <!-- Eliminate highlighting of 'pi_' and '.sql'-->
             <key>match</key>
-            <string>(?i)\b(pi_\w+)\b</string>
+            <string>(?i)\b(pi_\w+|\.sql)\b</string>
             <key>name</key>
             <string>support.variable.user-defined.oracle</string>
         </dict>
