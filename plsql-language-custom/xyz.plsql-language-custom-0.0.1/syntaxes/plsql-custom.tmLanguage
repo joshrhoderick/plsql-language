@@ -93,7 +93,7 @@
         <dict>
             <!-- Database links -->
             <key>match</key>
-            <string>(?i)(@\w+)\b</string>
+            <string>(?i)((?<!@)@\w+)\b</string>
             <key>name</key>
             <string>support.constant.user-defined.oracle</string>
         </dict>
