@@ -53,9 +53,9 @@
         </dict>
         <dict>
             <key></key>
-            <string>Do not highlight these. Overrides 'keyword.other.oracle scope'</string>
+            <string>Do not highlight these. Overrides strings from 'keyword.other.oracle scope'</string>
             <key>match</key>
-            <string>(?i)\b(\.log|language|java|c)\b</string>
+            <string>(?i)\b(\.log|\.name|language|java|c)\b</string>
             <key>name</key>
             <string>none</string>
         </dict>
