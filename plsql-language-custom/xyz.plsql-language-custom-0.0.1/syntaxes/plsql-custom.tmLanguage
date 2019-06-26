@@ -101,7 +101,8 @@
             <string>support.constant.user-defined.oracle</string>
         </dict>
         <dict>
-            <!-- Eliminate highlighting of 'pi_' and '.sql'-->
+            <key>comment</key>
+            <string>Eliminate highlighting of 'pi_' and '.sql'</string>
             <key>match</key>
             <string>(?i)\b(pi_\w+|\.sql)\b</string>
             <key>name</key>
