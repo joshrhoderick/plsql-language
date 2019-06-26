@@ -35,12 +35,6 @@
         </dict>
         <dict>
             <key>match</key>
-            <string>(?i)\b((?<!\.)log)\b</string>
-            <key>name</key>
-            <string>support.function.builtin.math.oracle</string>
-        </dict>
-        <dict>
-            <key>match</key>
             <string>(?i)\b(p(o|io)?_[-a-z0-9_]+)\b</string>
             <key>name</key>
             <string>variable.parameter.oracle</string>
@@ -57,14 +51,14 @@
             <key>name</key>
             <string>constant.other.oracle</string>
         </dict>
-        <!--
         <dict>
+            <key></key>
+            <string>Do not highlight these. Overrides 'keyword.other.oracle scope'</string>
             <key>match</key>
-            <string>(?i)\b()\b</string>
+            <string>(?i)\b(\.log|language|java|c)\b</string>
             <key>name</key>
-            <string>keyword.other.oracle</string>
+            <string>none</string>
         </dict>
-        -->
         <dict>
             <key>match</key>
             <string>(?i)\b(alter(\s+session)?|logging|((global|private)\s+temporary)|on\s+commit\s+(preserve|delete)\s+rows|(authid|bequeath)\s+(current_user|definer)|virtual|invisible|generated\s+(always|by\s+default|on\s+null)\s+as\s+identity|(constructor\s+|static\s+|(map\s+)?member\s+)?(function\s+|procedure\s+)|result|object|body|materialized\s+view\s+log)\b</string>
