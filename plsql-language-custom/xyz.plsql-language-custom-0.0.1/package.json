@@ -12,6 +12,12 @@
 		"xyz.plsql-language"
 	],
 	"contributes": {
+		"languages": [
+			{
+				"id": "plsql",
+				"configuration": "./syntaxes/plsql.configuration.json"
+			}
+		],
 		"grammars": [
 			{
 				"language": "plsql",
