@@ -52,14 +52,6 @@
             <string>constant.other.oracle</string>
         </dict>
         <dict>
-            <key></key>
-            <string>Do not highlight these. Overrides strings from 'keyword.other.oracle scope'</string>
-            <key>match</key>
-            <string>(?i)\b(\.log|\.name|language|java|c)\b</string>
-            <key>name</key>
-            <string>none</string>
-        </dict>
-        <dict>
             <key>match</key>
             <string>(?i)\b(alter(\s+session)?|logging|((global|private)\s+temporary)|on\s+commit\s+(preserve|delete)\s+rows|(authid|bequeath)\s+(current_user|definer)|virtual|invisible|generated\s+(always|by\s+default|on\s+null)\s+as\s+identity|(constructor\s+|static\s+|(map\s+)?member\s+)?(function\s+|procedure\s+)|result|object|body|materialized\s+view\s+log|(public\s+)?database\s+link|connect|identified\s+by)\b</string>
             <key>name</key>
@@ -101,12 +93,12 @@
             <string>support.constant.user-defined.oracle</string>
         </dict>
         <dict>
-            <key>comment</key>
-            <string>Eliminate highlighting of 'pi_' and '.sql'</string>
+            <key></key>
+            <string>Overrides. Do not highlight these</string>
             <key>match</key>
-            <string>(?i)\b(pi_\w+|\.sql)\b</string>
+            <string>(?i)\b(\.log|log\.|\.name|language|java|c|pi_\w+|\.sql)\b</string>
             <key>name</key>
-            <string>support.variable.user-defined.oracle</string>
+            <string>none</string>
         </dict>
 
         <!--end customization-->
