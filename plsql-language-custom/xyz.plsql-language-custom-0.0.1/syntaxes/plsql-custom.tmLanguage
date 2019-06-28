@@ -61,7 +61,7 @@
         </dict>
         <dict>
             <key>match</key>
-            <string>(?i)\b(alter(\s+session)?|logging|((global|private)\s+temporary)|on\s+commit\s+(preserve|delete)\s+rows|(authid|bequeath)\s+(current_user|definer)|virtual|invisible|generated\s+(always|by\s+default|on\s+null)\s+as\s+identity|(constructor\s+|static\s+|(map\s+)?member\s+)?(function\s+|procedure\s+)|result|object|body|materialized\s+view\s+log)\b</string>
+            <string>(?i)\b(alter(\s+session)?|logging|((global|private)\s+temporary)|on\s+commit\s+(preserve|delete)\s+rows|(authid|bequeath)\s+(current_user|definer)|virtual|invisible|generated\s+(always|by\s+default|on\s+null)\s+as\s+identity|(constructor\s+|static\s+|(map\s+)?member\s+)?(function\s+|procedure\s+)|result|object|body|materialized\s+view\s+log|(public\s+)?database\s+link|connect|identified\s+by)\b</string>
             <key>name</key>
             <string>keyword.other.ddl.oracle</string>
         </dict>
