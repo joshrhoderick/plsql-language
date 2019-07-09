@@ -23,6 +23,12 @@
         </dict>
         <dict>
             <key>match</key>
+            <string>\b(\d+(\.\d+)?|\d+(\.\d+)?[GgMmKk]{1})\b</string>
+            <key>name</key>
+            <string>constant.numeric.oracle</string>
+        </dict>
+        <dict>
+            <key>match</key>
             <string>(?i)\b(forall)\b</string>
             <key>name</key>
             <string>keyword.control.oracle</string>
