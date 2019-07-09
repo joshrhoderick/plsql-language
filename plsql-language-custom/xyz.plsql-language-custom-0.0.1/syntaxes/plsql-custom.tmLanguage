@@ -81,16 +81,14 @@
         support.variable.user-defined.oracle
         support.type.user-defined.oracle
         -->
-        <!--
         <dict>
             <key>comment</key>
-            <string>Highlight dynamic performance views</string>
+            <string>Highlight dynamic performance views and sys stuff</string>
             <key>match</key>
-            <string>(?i)\b(v\$\w*)\b</key>
+            <string>(?i)\b(v_?\$\w*|sys\.?\w+)\b</key>
             <key>name</key>
-            <string>support.class.user-defined.oracle</string>
+            <string>support.class.oracle</string>
         </dict>
-        -->
         <dict>
             <!-- Database links -->
             <key>match</key>
