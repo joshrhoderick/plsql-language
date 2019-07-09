@@ -35,7 +35,7 @@
         </dict>
         <dict>
             <key>match</key>
-            <string>(?i)\b(%(savepoint))\b</string>
+            <string>(?i)\b(%(savepoint)|regexp_replace)\b</string>
             <key>name</key>
             <string>support.function.oracle</string>
         </dict>
