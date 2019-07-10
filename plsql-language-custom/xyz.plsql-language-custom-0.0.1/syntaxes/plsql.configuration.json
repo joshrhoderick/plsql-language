@@ -6,14 +6,7 @@
         // symbols used for start and end a block comment. Remove this entry if
         // your language does not support block comments
         "blockComment": [
-            [ "/*",   "*/" ],
-            [ "q'[",  "]'" ],
-            [ "q'#",  "#'" ],
-            [ "q'{",  "}'" ],
-            [ "q'<",  ">'" ],
-            [ "q'(",  ")'" ],
-            [ "q'!",  "!'" ],
-            [ "q'|",  "|'" ]
+            [ "/*",   "*/" ]
         ]
     },
     // symbols used as brackets
