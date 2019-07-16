@@ -85,7 +85,7 @@
         </dict>
         <dict>
             <key>match</key>
-            <string>(?i)\b(c|gc|k)_\w+|\$\$\w+\b</string>
+            <string>(?i)(\b((c|gc|k)_\w+|ku\$\w+)\b|\$\$\w+)</string>
             <key>name</key>
             <string>constant.other.oracle</string>
         </dict>
