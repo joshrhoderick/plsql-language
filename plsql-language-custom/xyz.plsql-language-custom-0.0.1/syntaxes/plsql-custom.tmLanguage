@@ -138,7 +138,7 @@
                 </dict>
             </dict>
             <key>match</key>
-            <string>(?i)\b((dbms|utl|owa|apex)_\w+\.([\w\$]+))\b</string>
+            <string>(?i)\b((apex|ctx|dbms|owa|utl)_\w+\.([\w\$]+))\b</string>
             <key>name</key>
             <string>support.function.oracle</string>
         </dict>
