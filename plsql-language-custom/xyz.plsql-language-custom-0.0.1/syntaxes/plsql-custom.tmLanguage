@@ -120,8 +120,7 @@
         support.type.user-defined.oracle
         -->
         <dict>
-            <key>comment</key>
-            <string>Highlight dynamic performance views and sys stuff</string>
+            <!-- Dynamic perf. views and sys objects (e.g. v_$session, v$session, sys.anydata, etc.) -->
             <key>match</key>
             <string>(?i)\b(v_?\$\w*|sys\.?\w+)\b</key>
             <key>name</key>
@@ -149,8 +148,7 @@
             <string>support.function.oracle</string>
         </dict>
         <dict>
-            <key></key>
-            <string>Overrides. Do not highlight these</string>
+            <!-- Overrides. Do not highlight these -->
             <key>match</key>
             <string>(?i)\b(\.log|log\.|\.name|language|java|c|pi_\w+|[\.\$]sql)\b</string>
             <key>name</key>
