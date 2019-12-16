@@ -67,6 +67,12 @@
         </dict>
         <dict>
             <key>match</key>
+            <string>(?i)\b(@(@)?)\b</string>
+            <key>name</key>
+            <string>keyword.other.sqlplus.oracle</string>
+        </dict>
+        <dict>
+            <key>match</key>
             <string>(?i)\b(bitand|bitor|bitxor|%(savepoint)|regexp_replace)\b</string>
             <key>name</key>
             <string>support.function.oracle</string>
