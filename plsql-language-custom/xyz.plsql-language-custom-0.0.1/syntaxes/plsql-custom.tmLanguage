@@ -150,7 +150,7 @@
         <dict>
             <!-- Overrides. Do not highlight these -->
             <key>match</key>
-            <string>(?i)\b(\.log|log\.|\.name|language|java|c|pi_\w+|[\.\$]sql)\b</string>
+            <string>(?i)\b(\.log|log\.|\.name|language|java|c|type\s+,|pi_\w+|[\.\$]sql)\b</string>
             <key>name</key>
             <string>none</string>
         </dict>
