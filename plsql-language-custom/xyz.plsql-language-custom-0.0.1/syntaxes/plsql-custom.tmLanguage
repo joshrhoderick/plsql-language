@@ -103,7 +103,7 @@
         </dict>
         <dict>
             <key>match</key>
-            <string>(?i)\b(to|dual|within(\s+group)?|errors\s+(into|reject\s+limit)?|truncate|multiset(\s+except|intersect|union)?|including\s+new|cascade|byte|option|disable|modify|value|execute)\b</string>
+            <string>(?i)\b(to|dual|within(\s+group)?|errors\s+(into|reject\s+limit)?|truncate|multiset(\s+except|intersect|union)?|including\s+new|cascade|byte|option|disable|modify|value|execute|%type)\b</string>
             <key>name</key>
             <string>keyword.other.sql.oracle</string>
         </dict>
