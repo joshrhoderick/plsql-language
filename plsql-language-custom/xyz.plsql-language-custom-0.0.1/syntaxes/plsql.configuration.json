@@ -5,14 +5,12 @@
             [ "/*",   "*/" ]
         ]
     },
-    // symbols used as brackets
     "brackets": [
         ["(",    ")"],
         ["{",    "}"],
         ["if",   "end if"],
         ["loop", "end loop"],
         ["case", "end case"]
-        // ["begin", "end"]
     ],
     "autoClosingPairs": [
         {"open": "(",  "close": ")",  "notIn": ["string", "comment"]},
@@ -33,7 +31,6 @@
           "end": "^\\s*--\\s*#?endregion\\b"
         }
       },
-    // Default without $# (dont' work with getWordRangeAtPosition() according to issue #42649)
     "wordPattern":
         "(-?\\d*\\.\\d\\w*)|([^\\`\\~\\!\\@\\%\\^\\&\\*\\(\\)\\-\\=\\+\\[\\{\\]\\}\\\\\\|\\;\\:\\'\\\"\\,\\.\\<\\>\\/\\?\\s]+)"
 }
