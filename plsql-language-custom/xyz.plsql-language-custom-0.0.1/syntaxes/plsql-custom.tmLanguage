@@ -91,7 +91,7 @@
         </dict>
         <dict>
             <key>match</key>
-            <string>(?i)\b(autoextend|body|connect|create|datafile|default|deferrable|extent\s+management|flashback|(global\s+)?query\s+rewrite|initially\s+(immediate|deferred)|invisible|job|local|logging|maxsize|next|on\s+commit|(preserve|delete)\s+rows|quota(\s+unlimited)?|role|segment|session|size|tablespace|uniform|virtual|((global|private)\s+temporary)|(authid|bequeath)\s+(current_user|definer)|generated\s+(always|by\s+default|on\s+null)\s+as\s+identity|(constructor\s+|static\s+|(map\s+)?member\s+)?(function\s+|procedure\s+)|result|object|materialized\s+view\s+log|(public\s+)?database\s+link|identified\s+by)\b</string>
+            <string>(?i)\b(autoextend|body|connect|create(\s+or\s+replace)?|datafile|default|deferrable|extent\s+management|flashback|(global\s+)?query\s+rewrite|initially\s+(immediate|deferred)|invisible|job|local|logging|maxsize|next|on\s+commit|(preserve|delete)\s+rows|quota(\s+unlimited)?|role|segment|session|size|tablespace|uniform|virtual|((global|private)\s+temporary)|(authid|bequeath)\s+(current_user|definer)|generated\s+(always|by\s+default|on\s+null)\s+as\s+identity|(constructor\s+|static\s+|(map\s+)?member\s+)?(function\s+|procedure\s+)|result|object|materialized\s+view\s+log|(public\s+)?database\s+link|identified\s+by)\b</string>
             <key>name</key>
             <string>keyword.other.ddl.oracle</string>
         </dict>
